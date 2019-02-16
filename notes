@@ -1,0 +1,19 @@
+Why PIC:
+
+mov     eax, offset some_string
+call    msgboxa
+
+get kernel32.dll addr
+parse export table
+
+MALICIOUS CODE CLASS
+first proj
+    infect PE with PIC
+2nd proj
+    polymorphism engine -> mov eax, 0 | xor eax, eax | push 0 pop eax | ...
+3rd proj (if time)
+    rootkit
+
+----
+check delta offset for ex4
+check gflags.exe - not msdn one
